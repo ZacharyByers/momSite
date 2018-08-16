@@ -16,7 +16,7 @@ class NavBar extends React.Component {
     const { activeItem } = this.state
 
     return (
-      <Menu fluid widths={6} secondary={this.props.footer} color={this.props.footer && 'blue'}>
+      <Menu stackable fluid widths={6} secondary={this.props.footer} color={this.props.footer && 'blue'}>
           <Menu.Item
             onClick={this.onClick}
             as={Link}

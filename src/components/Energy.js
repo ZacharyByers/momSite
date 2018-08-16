@@ -34,7 +34,7 @@ class Energy extends React.Component {
   render() {
     return(
       <Segment basic compact style={styles.box}>
-        <Grid centered>
+        <Grid centered stackable>
           <Grid.Row style={styles.row}>
             <Grid.Column width={10}>
               <Header as='h1' style={styles.title} textAlign='center'>What is Energy Healing?</Header>

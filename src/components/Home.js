@@ -34,7 +34,7 @@ class Home extends React.Component {
   render() {
     return(
       <Segment basic>
-        <Grid centered container>
+        <Grid centered container stackable>
           <Grid.Column width={9}>
             <Header style={styles.kaushHead} textAlign='center'>
               Welcome!
@@ -76,7 +76,7 @@ class Home extends React.Component {
 
         <Header textAlign='center' style={styles.kaushHead}>Testimonials</Header>
 
-        <Grid centered container>
+        <Grid centered container stackable>
           <Grid.Column width={5}>
             <Grid.Row>
               <Segment basic style={styles.solidBox}>
