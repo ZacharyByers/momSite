@@ -43,7 +43,7 @@ class Home extends React.Component {
               <Grid>
                 <Grid.Column width={12}>
                   <span>
-                    {"I'm so glad you found your way here. I invite you to embark on a journey that will lead to greater peace, joy and freedom. his has been my experience with energy healing and I find no greater satisfaction "}
+                    {"I'm so glad you found your way here. I invite you to embark on a journey that will lead to greater peace, joy and freedom. This has been my experience with energy healing and I find no greater satisfaction "}
                     than helping others find hope and healing in their
                   </span>
                 </Grid.Column>
@@ -99,6 +99,14 @@ class Home extends React.Component {
                   More importantly, she has worked on 5 of my 6 children and my husband.
                   She is extremely caring and there is no doubt about her intent which is to
                   facilitate healing. ~ April H.
+                </p>
+              </Segment>
+            </Grid.Row>
+            <Divider hidden />
+            <Grid.Row>
+              <Segment basic style={styles.solidBox}>
+                <p style={{fontSize:18}}>
+                  Jen facilitates with a genuine love, and understanding while guiding me to the answers.  She does not add her own flair or interpretation but keeps the integrity of the process.  I think this ability will continue to ensure her progression as a true healer and helper.  I will be seeing her again, and would recommend anyone with varied levels of experience that Jen will be able to guide them at what ever they can handle or accept. She is kind, sincere, direct, and efficient.  So much better than anyone I have met with. <br/>~ Sarah H.
                 </p>
               </Segment>
             </Grid.Row>
