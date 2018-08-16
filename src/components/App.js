@@ -7,7 +7,7 @@ import About from './About';
 import FAQ from './FAQ';
 import Contact from './Contact';
 import NoMatch from './NoMatch';
-import { Segment, Image } from 'semantic-ui-react';
+import { Segment, Image, Divider } from 'semantic-ui-react';
 import { Switch, Route } from 'react-router-dom';
 import headerImage from '../images/headerImage.jpeg';
 
@@ -26,6 +26,8 @@ class App extends React.Component {
           <Route exact path='/contact' component={Contact} />
           <Route component={NoMatch} />
         </Switch>
+        <Divider />
+        <Segment basic> <NavBar footer={true} /> </Segment>
       </Segment>
     );
   }
