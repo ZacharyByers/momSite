@@ -51,7 +51,7 @@ class Home extends React.Component {
                   <Image src={momFace}/>
                 </Grid.Column>
               </Grid>
-                lives as well. Explore the links above to learn more about Energy Work and then contact me to get started!<nbsp/>
+                lives as well. Explore the links above to learn more about Energy Work and then contact me to get started!&nbsp;
                 <span style={styles.tilde}> ~</span><span style={styles.kaushHead}> Jen </span>
             </p>
           </Grid.Column>
