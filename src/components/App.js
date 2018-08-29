@@ -28,6 +28,8 @@ class App extends React.Component {
         </Switch>
         <Divider />
         <Segment basic> <NavBar footer={true} /> </Segment>
+        <Divider />
+        <p>Copyright © Light-Hearted Healing with Jen. All rights reserved.</p>
       </Segment>
     );
   }
