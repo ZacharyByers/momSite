@@ -5,6 +5,8 @@ import roses from '../images/roses.jpeg';
 import logo from '../images/logo.jpeg';
 
 class Contact extends React.Component {
+  state = {total: 0}
+
   render() {
     const onSuccess = (payment) => {
       console.log('payment success!', payment)
@@ -20,7 +22,7 @@ class Contact extends React.Component {
 
     const env = 'sandbox'
     const currency = 'USD'
-    const total = 1
+    const { total } = this.state
 
     const client = {
       sandbox: 'abcdef123456',
@@ -30,28 +32,28 @@ class Contact extends React.Component {
     const sessionOptions = [
       {
         text: '30 Minute Session $50.00 USD',
-        value: '30min',
+        value: 50,
       },
       {
         text: '60 Minute Session $100.00 USD',
-        value: '60min',
+        value: 100,
       },
       {
         text: 'Pckg of 3 Sessions $275.00 USD',
-        value: 'triple',
+        value: 275,
       },
       {
         text: 'Group Session $30.00 USD',
-        value: 'group',
+        value: 30,
       },
       {
         text: 'Guthrie Team Consult $75.00 USD',
-        value: 'guthrie',
+        value: 75,
       }
     ]
 
-    const onChange = (e) => {
-
+    const onChange = (_, data) => {
+      this.setState({total: data.value})
     }
 
     const styles = {
@@ -73,6 +75,7 @@ class Contact extends React.Component {
     }
 
     const par = "Email me to book your appointment and if you have any questions. Most appointments will be conducted over the phone, unless you are local to me. After booking, return here to pay in advance. "
+
 
     return(
       <Segment basic>
