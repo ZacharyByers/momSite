@@ -79,21 +79,25 @@ class Contact extends React.Component {
             Email me at {<a href='mailto:jen@jenniebyers.com'>jen@jennieByers.com</a>} to book your appointment and if you have any questions. Most appointments will be conducted over the phone, unless you are local to me. After booking, return here to pay in advance.
           </p>
           <Grid.Row>
-            <PaypalExpressBtn
-              env={env} client={client}
-              currency={currency}
-              total={total}
-              onError={onError}
-              onSuccess={onSuccess}
-              onCancel={onCancel}
-            />
-            <Dropdown
-              upward={false}
-              placeholder='Select Type of Session'
-              selection
-              options={sessionOptions}
-              onChange={onChange}
-            />
+            <Grid.Column width={3} textAlign='center'>
+              <PaypalExpressBtn
+                env={env} client={client}
+                currency={currency}
+                total={total}
+                onError={onError}
+                onSuccess={onSuccess}
+                onCancel={onCancel}
+              />
+            </Grid.Column>
+            <Grid.Column width={3} textAlign='center'>
+              <Dropdown
+                upward={false}
+                placeholder='Select Type of Session'
+                selection
+                options={sessionOptions}
+                onChange={onChange}
+              />
+            </Grid.Column>
           </Grid.Row>
           <Grid.Row>
             <Image src={logo} />
