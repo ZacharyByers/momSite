@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Header } from 'semantic-ui-react';
+import { Segment, Header, Responsive } from 'semantic-ui-react';
 
 const styles = {
   par: {
@@ -10,7 +10,6 @@ const styles = {
     fontWeight: '400',
   },
   block: {
-    width: '70%',
     margin: 'auto',
   },
   headBox: {
@@ -18,11 +17,18 @@ const styles = {
     opacity: '.67',
     border: 'dotted 3px #ffef60',
     borderRadius: '15px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
   title: {
     fontFamily: 'kaushan script',
     fontWeight: '400',
     fontSize: '3rem',
+  },
+  mobileTitle: {
+    fontFamily: 'kaushan script',
+    color: '#ff9966',
+    fontWeight: '400',
   },
 }
 
@@ -39,11 +45,25 @@ class Simply extends React.Component {
   render() {
     return(
       <Segment basic style={styles.block}>
-        <Segment compact basic padded='very' style={styles.headBox}>
+        <Responsive
+          as={Segment}
+          compact basic
+          padded='very'
+          style={styles.headBox}
+          {...Responsive.onlyComputer}
+        >
           <Header style={styles.title}>
             What is SimplyHealed™?
           </Header>
-        </Segment>
+        </Responsive>
+        <Responsive
+          as={Header}
+          style={styles.mobileTitle}
+          textAlign='center'
+          {...Responsive.onlyMobile}
+        >
+          What is SimplyHealed™?
+        </Responsive>
         <p style={styles.par}>
           The &nbsp;
           <a href='https://simplyhealed.com/' alt='simply healed'>

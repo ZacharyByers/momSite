@@ -30,7 +30,7 @@ import momFace from '../images/momFace.jpeg';
     }
   }
 
-  const boxText = `Go to the Contact Me page to book an appointment and we'll get you going on an incredible journey! Choose from a 60-minute session for $100, a 30-minute tune-up for $50, or a package of 3 sessions for $275.`
+  const boxText = `Go to the Contact Me page to book an appointment and we'll get you going on an incredible journey! Choose from a 60-minute session for $125, a 30-minute tune-up for $70, a package of 3 sessions for $350, or a package of 6 sessions for $699.`
 
   const testimonial1 = `Jennie is thoughtful and kind in pacing her clients, very much in tune to what they need and where they need to go. She has found words when I had none to express my feelings, and I feel of her spirit and her love in truly understanding pain. ~ Evonne B.`
 

@@ -31,25 +31,21 @@ class Contact extends React.Component {
 
     const sessionOptions = [
       {
-        text: '30 Minute Session $50.00 USD',
-        value: 50,
+        text: '30 Minute Session $70.00 USD',
+        value: 70,
       },
       {
-        text: '60 Minute Session $100.00 USD',
-        value: 100,
+        text: '60 Minute Session $125.00 USD',
+        value: 125,
       },
       {
-        text: 'Pckg of 3 Sessions $275.00 USD',
-        value: 275,
+        text: 'Pckg of 3 Sessions 350.00 USD',
+        value: 350,
       },
       {
-        text: 'Group Session $30.00 USD',
-        value: 30,
+        text: 'Pckg of 6 Sessions $699.00 USD',
+        value: 699,
       },
-      {
-        text: 'Guthrie Team Consult $75.00 USD',
-        value: 75,
-      }
     ]
 
     const onChange = (_, data) => {
@@ -92,6 +88,7 @@ class Contact extends React.Component {
               onCancel={onCancel}
             />
             <Dropdown
+              upward={false}
               placeholder='Select Type of Session'
               selection
               options={sessionOptions}

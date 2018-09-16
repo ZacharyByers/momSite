@@ -29,7 +29,7 @@ const whoAmI = "I am a certified SimplyHealed™ energy healing practitioner, us
 
 const whatIDo = "is conduct energy healing/clearing sessions to pinpoint the energetic root of old pain, unhealthy patterns and limiting belief systems. Once the negative energy is released you are free to move into joy and productivity. If you are struggling to become who you really want to be as an Individual, a Mom or Dad, a wife or husband, a Student or a Professional, there truly is hope to break free of the things that are keeping you stuck."
 
-const iAmalso = "the mother of seven (plus one fabulous son-in-law), wife of one, grandma of the cutest grandbaby in the world and alpha dog of two (Henry the Poofball Poochon and Mikey, the Psycho Schnauzer). My husband/best friend/sweetheart/hunky-man Reynold and I have been married almost 27 years. How did we get that old?"
+const iAmalso = "the mother of seven (plus one fabulous son-in-law), wife of one, grandma of the cutest grandbaby in the world and alpha dog of two (Henry the Poofball Poochon and Mikey, the Psycho Schnauzer). My husband/best friend/sweetheart/hunky-man Reynold and I have been married almost 28 years. How did we get that old?"
 
 const par1 = "I am a transplant to Arizona via Oregon (my native land), Utah (7 years and a B.A. at Brigham Young University), Upstate New York (hubby's PhD in Business, mine in parenting 4 kids under the age of 5) and California (oh how we miss the beach! *sniff*)"
 
@@ -43,7 +43,7 @@ const par5 = "My Dad nicknamed me Tigger when I was a little kid, because I boun
 
 const par6 = "My innately happy, carefree personality really got  bogged down after I started having children and I struggled with depression for 20 years (most of those years not knowing I was depressed, just feeling broken and pathetic). I felt so stuck. I wanted to create, play, be organized, be a loving mom, follow through on my ideas, be responsible and reliable and just be happy! I’m a very spiritual person and I felt that I must be doing something wrong because no matter how hard I prayed or how “good” I was, I felt like I just sank deeper and deeper into self-loathing and dysfunction. I went to a psychiatrist and started taking anti-depressants and ADHD medication, which saved me from hitting rock bottom, but I knew that a part of me was not the same on these medications and I wanted to feel truly alive."
 
-const par7 = "Four years ago I pled with God to help me and also my family overcome these patterns of depression, anxiety and, as I later discovered, addiction that were manifesting with all seven of my children and myself. It was then that I was introduced to the use of essential oils for emotional support and through the people I met in that arena, I was led to Emotional Release Processing."
+const par7 = "Five years ago I pled with God to help me and also my family overcome these patterns of depression, anxiety and, as I later discovered, addiction that were manifesting with all seven of my children and myself. It was then that I was introduced to the use of essential oils for emotional support and through the people I met in that arena, I was led to Emotional Release Processing."
 
 const par8 = "I completed a year-long training through the Institute of Healing Arts and  became a Certified Emotional Release Facilitator in September of 2013. Through this training I began to experience tremendous hope and change in my life. I discovered that weaknesses I used to feel hopeless about, resigning myself to the fact that they were just my lot in life, could actually become in many instances my strengths! As God led the way to new resources I started to feel light flood into my life."
 
@@ -51,7 +51,7 @@ const par9 = "Emotional Processing is an incredible tool which blends modern psy
 
 const par10 = "I began again to search and ask God for help and that’s when SimplyHealed™ came into my life. I have learned to trust that what I need comes into my life when I need it and this new method of clearing emotional and energetic blocks has taken my healing (and my family’s) to a whole new level."
 
-const par11 = "After being involved in emotional and energy healing for almost four years now I feel so much hope! It is so exciting to be able to help others come to a place of healing as well. Please know, I do not consider myself a healer. I am an energy healing facilitator or as SimplyHealed™ creator Carolyn Cooper says, “I’m just the cleaning lady.” But I am blessed beyond description to be able to facilitate change and healing in other people’s lives."
+const par11 = "After being involved in emotional and energy healing for almost five years now I feel so much hope! It is so exciting to be able to help others come to a place of healing as well. Please know, I do not consider myself a healer. I am an energy healing facilitator or as SimplyHealed™ creator Carolyn Cooper says, “I’m just the cleaning lady.” But I am blessed beyond description to be able to facilitate change and healing in other people’s lives."
 
 class About extends React.Component {
   render() {
