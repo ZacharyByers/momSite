@@ -74,59 +74,34 @@ class Contact extends React.Component {
       },
     }
 
-    const par = "Email me to book your appointment and if you have any questions. Most appointments will be conducted over the phone, unless you are local to me. After booking, return here to pay in advance. "
-
 
     return(
       <Segment basic>
         <Grid container centered stackable>
-          <Grid.Column width={2} />
-          <Grid.Column width={6}>
-            <Header as='h1' style={styles.head}>Contact Me:</Header>
+          <Header as='h1' style={styles.head}>Contact Me:</Header>
+          <p style={styles.par}>
+            Email me at {<a href='mailto:jen@jenniebyers.com'>jen@jennieByers.com</a>} to book your appointment and if you have any questions. Most appointments will be conducted over the phone, unless you are local to me. After booking, return here to pay in advance.
+          </p>
+          <Grid.Row>
             <Dropdown
               placeholder='Select Type of Session'
               selection
               options={sessionOptions}
               onChange={onChange}
             />
-            <Divider hidden />
+            <PaypalExpressBtn
+              env={env} client={client}
+              currency={currency}
+              total={total}
+              onError={onError}
+              onSuccess={onSuccess}
+              onCancel={onCancel}
+            />
+          </Grid.Row>
+          <Grid.Row>
             <Image src={logo} />
-            <div style={styles.email}>jen@jenniebyers.com</div>
-            <Divider hidden />
-              <PaypalExpressBtn
-                env={env} client={client}
-                currency={currency}
-                total={total}
-                onError={onError}
-                onSuccess={onSuccess}
-                onCancel={onCancel}
-              />
-            <Image src={roses} />
-          </Grid.Column>
-          <Grid.Column width={7}>
-              <p style={styles.par}>{par}</p>
-              <Form>
-                <Form.Field required>
-                  <label>Name:</label>
-                  <input placeholder='Name' />
-                </Form.Field>
-                <Form.Field required>
-                  <label>Email:</label>
-                  <input placeholder='Email' />
-                </Form.Field>
-                <Form.Field required>
-                  <label>Subject:</label>
-                  <input placeholder='Subject' />
-                </Form.Field>
-                <Form.Field required>
-                  <label>Message:</label>
-                  <TextArea placeholder='Message' />
-                </Form.Field>
-              </Form>
-              <Divider hidden />
-              <Button>Submit</Button>
-          </Grid.Column>
-          <Grid.Column width={1} />
+          </Grid.Row>
+          <Image src={roses} />
         </Grid>
       </Segment>
     )
