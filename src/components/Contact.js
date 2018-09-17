@@ -5,7 +5,7 @@ import roses from '../images/roses.jpeg';
 import logo from '../images/logo.jpeg';
 
 class Contact extends React.Component {
-  state = {total: 0}
+  state = {total: 0.01}
 
   render() {
     const onSuccess = (payment) => {
@@ -20,13 +20,13 @@ class Contact extends React.Component {
       console.log('Error!', err)
     }
 
-    const env = 'sandbox'
+    const env = 'production'
     const currency = 'USD'
     const { total } = this.state
 
     const client = {
-      sandbox: 'abcdef123456',
-      production: 'abcdef123456',
+      sandbox: 'AVJWx5d9YnB3ziQ61sqrxkc-v-R62BCoW0L45qcMxstl2GsRGWgpqmfvKn9TnrmVOcEvsbZyqDFLSHSg',
+      production: 'ATXEfhRbNRM9kmFWelcygVFuEo9jr7VFFm8WrYmJU8Rqxd1SzvZqC8iDxgLNh5DPNwWPt9UlRxRdPkM0',
     }
 
     const sessionOptions = [
@@ -81,7 +81,8 @@ class Contact extends React.Component {
           <Grid.Row>
             <Grid.Column width={3} textAlign='center'>
               <PaypalExpressBtn
-                env={env} client={client}
+                env={env}
+                client={client}
                 currency={currency}
                 total={total}
                 onError={onError}
