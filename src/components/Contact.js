@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Image, Header, Dropdown, Divider, Form, TextArea, Button } from 'semantic-ui-react';
+import { Segment, Grid, Image, Header, Dropdown } from 'semantic-ui-react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import roses from '../images/roses.jpeg';
 import logo from '../images/logo.jpeg';
@@ -9,7 +9,7 @@ class Contact extends React.Component {
 
   render() {
     const onSuccess = (payment) => {
-      console.log('payment success!', payment)
+      alert('payment success!', payment)
     }
 
     const onCancel = (data) => {
