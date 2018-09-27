@@ -13,11 +13,11 @@ class Contact extends React.Component {
     }
 
     const onCancel = (data) => {
-      console.log('user cancelled', data)
+      alert('user cancelled', data)
     }
 
     const onError = (err) => {
-      console.log('Error!', err)
+      alert('Error!', err)
     }
 
     const env = 'production'
@@ -43,8 +43,12 @@ class Contact extends React.Component {
         value: 350,
       },
       {
-        text: 'Pckg of 6 Sessions $699.00 USD',
-        value: 699,
+        text: 'Pckg of 6 Sessions $650.00 USD',
+        value: 650,
+      },
+      {
+        text: 'Pckg of 10 Sessions $999.00 USD',
+        value: 999,
       },
     ]
 
