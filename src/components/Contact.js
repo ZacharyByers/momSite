@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Image, Header, Dropdown } from 'semantic-ui-react';
+import { Segment, Grid, Image, Header, Dropdown, Divider } from 'semantic-ui-react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import roses from '../images/roses.jpeg';
 import logo from '../images/logo.jpeg';
@@ -72,13 +72,29 @@ class Contact extends React.Component {
         color: '#ff9966',
         fontWeight: 'normal',
       },
+      subHead: {
+        color: '#ffcc33',
+      },
+      dashBox: {
+        border: 'dashed 3px #ffa899',
+      },
     }
 
 
     return(
       <Segment basic>
         <Grid container centered stackable>
-          <Header as='h1' style={styles.head}>Contact Me:</Header>
+          <Grid.Row>
+            <Header as='h1' style={styles.head}>Contact Me:</Header>
+          </Grid.Row>
+          <Segment basic style={styles.dashBox}>
+            <Header as='h2' style={styles.subHead}>Session Prices:</Header>
+            <p>30 minutes -- $70</p>
+            <p>60 minutes -- $125</p>
+            <p>Package of 3 Sessions -- $350</p>
+            <p>Package of 6 Sessions -- $650</p>
+            <p>Package of 10 Sessions -- $999</p>
+          </Segment>
           <p style={styles.par}>
             Email me at {<a href='mailto:jen@jenniebyers.com'>jen@jennieByers.com</a>} to book your appointment and if you have any questions. Most appointments will be conducted over the phone, unless you are local to me. After booking, return here to pay in advance.
           </p>
